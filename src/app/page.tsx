@@ -428,7 +428,7 @@ const StepCard: React.FC<StepCardProps> = ({
 	number,
 	title,
 	description,
-	color,
+	
 }) => (
 	<div className='relative'>
 		<div className='bg-white rounded-2xl p-8 shadow-lg border-2 border-orange-200 hover:border-orange-400 transition h-full'>
