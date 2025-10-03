@@ -6,12 +6,10 @@ import {
 	CheckCircle2,
 	Clock,
 	DollarSign,
-	Menu,
 	PlayCircle,
 	Rocket,
 	Target,
 	TrendingUp,
-	X,
 } from 'lucide-react';
 
 import {
