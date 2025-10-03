@@ -42,7 +42,7 @@ export default function Home() {
 
 							<p className='text-2xl text-gray-700 leading-relaxed mb-8'>
 								Stop losing sales to ugly product pages. Get high-converting,
-								single-product landing pages that turn your ad clicks into{' '}
+								single-product landing pages that turn your ad clicks into
 								<span className='font-bold text-orange-600'>instant sales</span>
 								.
 							</p>
@@ -117,11 +117,12 @@ export default function Home() {
 					<div className='max-w-7xl mx-auto'>
 						<div className='text-center mb-16'>
 							<h2 className='text-4xl lg:text-5xl font-black text-gray-900 mb-4'>
-								Are You Wasting Money on Ads That{' '}
-								<span className='text-red-600'>Don't Convert?</span>
+								Are You Wasting Money on Ads That
+								<span className='text-red-600'>Don&apos;t Convert?</span>
 							</h2>
 							<p className='text-xl text-gray-600'>
-								You're not alone. Here's what's killing your sales...
+								You&apos;re not alone. Here&apos;s what&apos;s killing your
+								sales...
 							</p>
 						</div>
 
@@ -199,7 +200,7 @@ export default function Home() {
 					<div className='max-w-7xl mx-auto'>
 						<div className='text-center mb-16'>
 							<h2 className='text-4xl lg:text-5xl font-black mb-4'>
-								Why Successful Marketers Use AdPagePro
+								Why Successful Marketers Use Sellora
 							</h2>
 							<p className='text-xl text-orange-100'>
 								Real results from real users
@@ -320,7 +321,7 @@ export default function Home() {
 							<div className='relative z-10'>
 								<div className='text-center mb-12'>
 									<div className='inline-block bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6'>
-										🚀 LAUNCH OFFER - LIMITED TIME
+										LAUNCH OFFER - LIMITED TIME
 									</div>
 									<h2 className='text-4xl lg:text-5xl font-black mb-4'>
 										Start Selling Today for Only
@@ -330,7 +331,7 @@ export default function Home() {
 										<span className='text-2xl text-gray-400'>/month</span>
 									</div>
 									<p className='text-xl text-gray-300 mb-8'>
-										That's less than the cost of ONE Facebook ad campaign
+										That&apos;s less than the cost of ONE Facebook ad campaign
 									</p>
 								</div>
 
@@ -424,12 +425,7 @@ const ProblemCard: React.FC<ProblemCardProps> = ({
 	</div>
 );
 
-const StepCard: React.FC<StepCardProps> = ({
-	number,
-	title,
-	description,
-	
-}) => (
+const StepCard: React.FC<StepCardProps> = ({ number, title, description }) => (
 	<div className='relative'>
 		<div className='bg-white rounded-2xl p-8 shadow-lg border-2 border-orange-200 hover:border-orange-400 transition h-full'>
 			<div className='absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-full flex items-center justify-center text-white text-2xl font-black shadow-lg'>
