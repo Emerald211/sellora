@@ -3,6 +3,7 @@ import './globals.css';
 import { Urbanist } from 'next/font/google';
 
 import Navbar from './components/Navbar/Navbar';
+import { ReduxProvider } from './provider';
 
 const urbanist = Urbanist({
 	subsets: ['latin'],
@@ -22,8 +23,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${urbanist.variable} font-sans`}>
-				<Navbar />
-				{children}
+				<ReduxProvider>
+					<Navbar />
+					{children}
+				</ReduxProvider>
 			</body>
 		</html>
 	);

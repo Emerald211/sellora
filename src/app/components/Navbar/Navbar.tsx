@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import { Menu, Rocket, X } from 'lucide-react';
-
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const router = useRouter();
 
 	return (
 		<>
@@ -18,7 +19,7 @@ export default function Navbar() {
 			<nav className='sticky top-0 z-50 bg-white border-b shadow-sm'>
 				<div className='max-w-7xl mx-auto px-6 py-4'>
 					<div className='flex items-center justify-between'>
-						<div className='flex items-center gap-2'>
+						<div onClick={() => router.push('/')} className='flex items-center gap-2'>
 							<div className='w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center'>
 								<Rocket className='w-6 h-6 text-white' />
 							</div>
@@ -43,7 +44,7 @@ export default function Navbar() {
 								className='text-gray-600 hover:text-gray-900 font-medium'>
 								Templates
 							</a>
-							<button className='px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-bold hover:shadow-lg transition'>
+							<button onClick={() => router.push('/onboarding')} className='px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-bold hover:shadow-lg transition'>
 								Start Selling Today →
 							</button>
 						</div>
@@ -72,7 +73,9 @@ export default function Navbar() {
 								className='block text-gray-600 hover:text-gray-900 font-medium'>
 								Templates
 							</a>
-							<button className='w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-bold'>
+							<button
+								onClick={() => router.push('/onboarding')}
+								className='w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg font-bold'>
 								Start Selling Today →
 							</button>
 						</div>

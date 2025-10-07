@@ -21,8 +21,11 @@ import {
 	PricingFeatureProps,
 	FeatureProps,
 } from '../types/landingPage';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+
+	const router = useRouter();
 	return (
 		<div className=' font-urbanist'>
 			<div className='min-h-screen bg-white'>
@@ -48,11 +51,11 @@ export default function Home() {
 							</p>
 
 							<div className='flex flex-col sm:flex-row gap-4 justify-center mb-8'>
-								<button className='group px-10 py-5 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition flex items-center justify-center gap-2'>
+								<button onClick={() => router.push('/onboarding')} className='group px-10 py-5 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition flex items-center justify-center gap-2'>
 									Get Your Landing Pages Now
 									<ArrowRight className='w-6 h-6 group-hover:translate-x-2 transition' />
 								</button>
-								<button className='px-10 py-5 bg-white border-2 border-gray-900 text-gray-900 rounded-xl font-bold text-lg hover:bg-gray-50 transition flex items-center justify-center gap-2'>
+								<button onClick={() => router.push('/onboarding')} className='px-10 py-5 bg-white border-2 border-gray-900 text-gray-900 rounded-xl font-bold text-lg hover:bg-gray-50 transition flex items-center justify-center gap-2'>
 									<PlayCircle className='w-5 h-5' />
 									Watch Demo
 								</button>
@@ -272,7 +275,7 @@ export default function Home() {
 								<Feature text='WhatsApp order integration' />
 								<Feature text='Mobile responsive design' />
 							</div>
-							<button className='px-10 py-5 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition'>
+							<button onClick={() => router.push('/onboarding')} className='px-10 py-5 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition'>
 								See All Templates in Action →
 							</button>
 						</div>
@@ -347,7 +350,7 @@ export default function Home() {
 								</div>
 
 								<div className='text-center'>
-									<button className='w-full md:w-auto px-12 py-6 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-black text-xl hover:shadow-2xl hover:scale-105 transition mb-4'>
+									<button onClick={() => router.push('/onboarding')} className='w-full md:w-auto px-12 py-6 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-black text-xl hover:shadow-2xl hover:scale-105 transition mb-4'>
 										Get Started Now - ₦5,000/Month →
 									</button>
 									<p className='text-sm text-gray-400'>
@@ -370,7 +373,7 @@ export default function Home() {
 							Every day you wait is money left on the table. Join 100+ marketers
 							already crushing it.
 						</p>
-						<button className='px-12 py-6 bg-white text-orange-600 rounded-xl font-black text-lg hover:shadow-2xl hover:scale-105 transition'>
+						<button onClick={() => router.push('/onboarding')} className='px-12 py-6 bg-white text-orange-600 rounded-xl font-black text-lg hover:shadow-2xl hover:scale-105 transition'>
 							Yes! I Want to Sell More →
 						</button>
 					</div>
