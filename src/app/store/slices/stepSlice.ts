@@ -16,7 +16,7 @@ const initialState: StepState = {
         { id: 2, status: 'pending' },
         { id: 3, status: 'pending' }
     ],
-    currentStep: 3
+    currentStep: 1
 };
 
 const stepSlice = createSlice({
