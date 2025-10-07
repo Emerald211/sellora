@@ -38,7 +38,7 @@ const CreateAccount = () => {
 							Create Your Store Account
 						</h2>
 						<p className='text-lg text-gray-600'>
-							Almost there! Let's set up your account
+							Almost there! Let&#39;s set up your account
 						</p>
 					</div>
 

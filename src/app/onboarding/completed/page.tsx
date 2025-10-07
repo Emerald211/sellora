@@ -22,12 +22,12 @@ const OnboardingCompleted = () => {
 					 Welcome to Sellora!
 					</h2>
 					<p className='text-lg text-gray-600 mb-8'>
-						Your store is ready. Let's create your first product page!
+						Your store is ready. Let&#39;s create your first product page!
 					</p>
 
 					<div className='bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 mb-8'>
 						<h3 className='text-xl font-bold text-gray-900 mb-6'>
-							What's Next?
+							What&#39;s Next?
 						</h3>
 						<div className='space-y-4 text-left'>
 							<div className='flex items-start gap-4'>

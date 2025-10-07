@@ -103,9 +103,13 @@ const OnboardingFlow = () => {
 								Complete your Account verification
 							</button>
 						</div>
-					) : (<div className='flex justify-center items-center'><button className=' bg-gradient-to-br from-orange-600 to-red-600 text-white shadow-lg  px-3 py-3'>
-						You'all set! Go to your Dashboard
-					</button></div>)}
+					) : (
+						<div className='flex justify-center items-center'>
+							<button className=' bg-gradient-to-br from-orange-600 to-red-600 text-white shadow-lg  px-3 py-3'>
+								You&#39;all set! Go to your Dashboard
+							</button>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>
